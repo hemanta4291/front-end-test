@@ -122,6 +122,9 @@ body{
     z-index: 66666;
     padding: 20px 35px;
     .transition();
+    @media only screen and (max-width: 993px){
+        width: 0;
+    }
 
     &-logo{
         color: @white;
@@ -156,6 +159,11 @@ body{
         color: #fff;
         z-index: 9999999;
         cursor: pointer;
+
+        @media only screen and (max-width: 993px){
+            top: 27px;
+            left: 190px;
+        }
     }
 }
 
@@ -166,7 +174,9 @@ body{
     width: 100%;
     padding: 100px 35px 0 280px;
     .transition();
-
+    @media only screen and (max-width: 993px){
+        display: grid;
+    }
 
     &-inner{
         background: @white;
@@ -299,6 +309,10 @@ body{
         background: @gray-light;
         .borer-radius-px(10px);
         overflow: hidden !important;
+
+        @media only screen and (max-width: 1200px){
+            display: grid;
+        }
 
         &-row{
             overflow-x: scroll;
