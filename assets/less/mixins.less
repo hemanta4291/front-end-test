@@ -22,3 +22,20 @@
     border: 1px solid @border;
     .borer-radius-px(@radius)
 }
+
+// trans/single btn mixin
+
+.transbtn( @back,@colr,@radius,@width,@height){
+    background: @back;
+    border: 1px solid @colr;
+    .borer-radius-px(@radius);
+    .display-flex(inline-flex,center,center);
+    color: @colr;
+    width: @width;
+    height: @height;
+}
+
+// col padding adjust
+.padding-adjust(@pd){
+    padding: 0 @pd;
+}

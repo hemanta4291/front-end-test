@@ -262,10 +262,16 @@ body{
 
     // middle start
     &-middle{
-        overflow-x: scroll;
-        background: @gray-light;
         padding: 20px;
+        background: @gray-light;
         .borer-radius-px(10px);
+        overflow: hidden !important;
+
+        &-row{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            
+        }
         &-toper{
             display: flex;
             padding: 0 15px;
@@ -322,7 +328,8 @@ body{
                     .display-flex(flex, center, center);
                     background:@blue-light;
                     color: @white;
-                    .borer-radius-per(50%)
+                    .borer-radius-per(50%);
+                    cursor: pointer;
                 }
             }
         }
@@ -330,12 +337,38 @@ body{
     }
     // Main add content single
     &-add__content{
+        margin: 20px 0 10px 0;
         &-row{
             display: flex;
             &-single{
                 width: 350px;
                 margin-right: 10px;
                 display: inline-table;
+
+                .add-deal{
+                    .display-flex(flex,center,center);
+                     text-align: center;
+                }
+
+                .addbutton{
+                    a{
+                        .display-flex(inline-flex,center,center);
+                        font-size: 15px;
+                        color: @gray;
+                        margin-top: 5px;
+                    }
+                    .material-icons{
+                        width: 26px;
+                        height: 26px;
+                        background: @blue-light;
+                        color: @white;
+                        .borer-radius-per(50%);
+                        font-size: 18px;
+                        .display-flex(flex,center,center);
+                        margin-right: 8px;
+                    }
+                }
+               
             }
         }
         &-single{
@@ -404,6 +437,7 @@ body{
                             .material-icons{
                                 color: @gray;
                                 font-size: 15px;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -416,9 +450,40 @@ body{
                             font-size: 20px;
                             .borer-radius-per(50%);
                             .display-flex(flex,center,center);
+                            cursor: pointer;
                         }
                     }
                 }
+            }
+        }
+    }
+    // main delete wrapper
+    &-delete__wrapper{
+        margin-top: 16px;
+        .col{
+            .padding-adjust(7px)
+        }
+        &-single{
+            a{
+                font-weight: 500;
+            }
+            a.m{
+                &-delete{
+                    .transbtn(@white, @delete,6px,100%,50px);
+                }
+                &-win{
+                    .transbtn(@white, @win,6px,100%,50px);
+                }
+                &-lost{
+                    .transbtn(@white, @delete,6px,100%,50px);
+                }
+                &-pipeline{
+                    .transbtn(@white, @pipeline,6px,100%,50px);
+                }
+            }
+            .material-icons{
+                font-size: 18px;
+                margin-right: 12px;
             }
         }
     }
