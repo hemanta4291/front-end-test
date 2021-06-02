@@ -1,0 +1,24 @@
+// mixin
+.borer-radius-px(@radius:4px){
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+.borer-radius-per(@radius:50%){
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+.display-flex(@flex:flex,@just-content:space-between,@item-center:center){
+    display:@flex ;
+    justify-content: @just-content;
+    align-items:@item-center;
+}
+
+.search(@back,@height,@width,@radius){
+    background: @back;
+    height: @height;
+    width: @width;
+    border: 1px solid @border;
+    .borer-radius-px(@radius)
+}

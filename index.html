@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="page-topbar" id="header">
+        <div class="navbar navbar-fixed">
+          <div class="navbar-search">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required placeholder="search">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+          <div class="navbar-icons">
+            <ul class="navbar-icons-ul">
+              <li class="navbar-icons-phone"> <i class="material-icons">phone</i></li>
+              <li> <i class="material-icons">add</i></li>
+              <li> <i class="material-icons">notifications_none</i></li>
+              <li> <i class="material-icons">?</i></li>
+            </ul>
+          </div>
+          <div class="navbar-profile">
+            <div class="navbar-profile-img">
+              <img src="./assets/images/profile.png" alt="profile">
+            </div>
+            <div class="navbar-profile-content">
+              <div class="navbar-profile-left">
+                <h5>admin</h5>
+                <h6>admi@email.com</h6>
+              </div>
+              <div class="navbar-profile-icon">
+                <i class="material-icons">keyboard_arrow_down
+                  </i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Aside Bar Section Start -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+          <i class="material-icons">face</i><spna class="sidebar-logo-name">Pypepro</spna>
+      </div>
+      <ul class="sidebar-list" data-simplebar>
+        <li><a href="#"><i class="material-icons">home</i>Dashboard</a></li>
+        <li><a href="#"><i class="material-icons">inbox</i>Inbox</a></li>
+        <li><a href="#"><i class="material-icons">home</i>Deals</a></li>
+        <li><a href="#"><i class="material-icons">access_time</i>Calender</a></li>
+        <li><a href="#"><i class="material-icons">people_outline</i>Contact</a></li>
+        <li><a href="#"><i class="material-icons">volume_down</i>Marketing</a></li>
+        <li><a href="#"><i class="material-icons">assistant_photo</i>Triggers</a></li>
+        <li><a href="#"><i class="material-icons">bug_report</i>Reporing</a></li>
+        <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="#"><i class="material-icons">home</i>Training</a></li>
+        <li><a href="#"><i class="material-icons">perm_identity</i>Accounts</a></li>
+        <li><a href="#"><i class="material-icons">find_replace</i>Find New Leads</a></li>
+      </ul>
+
+      <div class="sidebar-toggle">
+        <i class="material-icons">menu</i>
+      </div>
+    </aside>
+    <!-- Header Section End -->
+    <!-- Main Section Start -->
+    <div class="main">
+      <div class="main-inner">
+        <div class="row main-topbar">
+          <div class="col xl4">
+            <h3 class="main-topbar-title">Deal</h3>
+          </div>
+          <div class="col xl8 main-topbar-left">
+            <ul class="main-topbar-ul">
+              <li><a href="#"><i class="material-icons">bug_report</i></a></li>
+              <li ><a class="active" href="#"><i class="material-icons">settings</i></a></li>
+              <li><a href="#"><i class="material-icons">home</i></a></li>
+              <li><a href="#"><i class="material-icons">perm_identity</i></a></li>
+            </ul>
+            <div class="main-topbar-buttons">
+                <a href="#"><i class="material-icons">add</i>Create List</a>
+                <a href="#"><i class="material-icons">settings</i>Settings</a>
+                <i class="material-icons">sync_disabled</i>
+            </div>
+          </div>
+        </div>
+        <!-- main topbar end -->
+        <div class="row main-select-serchbar">
+          <div class="col m8 l12 s12 xl8 main-select-serchbar-left">
+            <div class="input-field main-select-serchbar-sell">
+              <select>
+                <option value="" disabled selected>Vehicel Sell</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field main-select-serchbar-active">
+              <select>
+                <option value="" disabled selected>Active</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <div class="input-field  main-select-serchbar-date">
+              <select>
+                <option value="" disabled selected></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col m4 l12 s12 xl4 main-select-serchbar-right">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required placeholder="search">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </div>
+         <!-- slelect and search bar  end -->
+        <div class="row">
+          <div class="col xl12">
+            <p>Total Pipeline Value: $20K | Total Open Deals: $20K | Total Won: $0 | Total Lost: $0</p>
+          </div>
+        </div>
+        <!-- Paragraph text  end -->
+        <div class="row">
+          <div class="col xl12">
+            <div class="main-middle">
+              <div class="main-middle-content">
+              <div class="main-middle-toper">
+                  <div class="white no-padding">
+                    <div class="main-middle-single">
+                      <div class="main-middle-single-left">
+                        <h6>jon deo</h6>
+                        <ul class="main-middle-single-left-list">
+                          <li>1 Deal</li>
+                          <li></li>
+                          <li>$1.2k</li>
+                        </ul>
+                      </div>
+                      <div class="main-middle-single-right">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white  no-padding">
+                    <div class="main-middle-single">
+                      <div class="main-middle-single-left">
+                        <h6>jon deo</h6>
+                        <ul class="main-middle-single-left-list">
+                          <li>1 Deal</li>
+                          <li></li>
+                          <li>$1.2k</li>
+                        </ul>
+                      </div>
+                      <div class="main-middle-single-right">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white no-padding">
+                    <div class="main-middle-single">
+                      <div class="main-middle-single-left">
+                        <h6>jon deo</h6>
+                        <ul class="main-middle-single-left-list">
+                          <li>1 Deal</li>
+                          <li></li>
+                          <li>$1.2k</li>
+                        </ul>
+                      </div>
+                      <div class="main-middle-single-right">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white no-padding">
+                    <div class="main-middle-single">
+                      <div class="main-middle-single-left">
+                        <h6>jon deo</h6>
+                        <ul class="main-middle-single-left-list">
+                          <li>1 Deal</li>
+                          <li></li>
+                          <li>$1.2k</li>
+                        </ul>
+                      </div>
+                      <div class="main-middle-single-right">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white no-padding">
+                    <div class="main-middle-single">
+                      <div class="main-middle-single-left">
+                        <h6>jon deo</h6>
+                        <ul class="main-middle-single-left-list">
+                          <li>1 Deal</li>
+                          <li></li>
+                          <li>$1.2k</li>
+                        </ul>
+                      </div>
+                      <div class="main-middle-single-right">
+                        <i class="material-icons">add</i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Main Add Content -->
+               <div class="main-add__content">
+                <div class="main-add__content-row">
+                  <div class="main-add__content-row-single">
+                    <div class="main-add__content-single" data-simplebar data-simplebar-auto-hide="false">
+                      <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                    </div>
+                  </div>
+                  <!-- single add column end -->
+                  <div class="main-add__content-row-single">
+                    <div class="main-add__content-single" data-simplebar data-simplebar-auto-hide="false">
+                      <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                    </div>
+                  </div>
+                  <!-- single add column end -->
+                  <div class="main-add__content-row-single">
+                    <div class="main-add__content-single" data-simplebar data-simplebar-auto-hide="false">
+                      <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                    </div>
+                  </div>
+                  <!-- single add column end -->
+                  <div class="main-add__content-row-single">
+                    <div class="main-add__content-single" data-simplebar data-simplebar-auto-hide="false">
+                      <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                    </div>
+                  </div>
+                  <!-- single add column end -->
+                  <div class="main-add__content-row-single">
+                    <div class="main-add__content-single" data-simplebar data-simplebar-auto-hide="false">
+                      <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                       <div class="main-add__content-single-list">
+                        <span class="list-title">Jhon Deo</span><span class="list-count">(1.2k)</span>
+                        <p>Time in Stage : 1 Week Ago</p>
+                        <div class="single-contact">
+                          <ul class="single-ul">
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">phone</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                            <li><a href="#"><i class="material-icons">people</i></a></li>
+                          </ul>
+                          <div class="single-arrow">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                          </div>
+                        </div>
+                      </div>
+                       <!-- add content single end -->
+                    </div>
+                  </div>
+                  <!-- single add column end -->
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Main Section End -->
+    
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+ <script src="assets/js/main.js"></script>
+</body>
+</html>
+        
