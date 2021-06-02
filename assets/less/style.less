@@ -44,6 +44,7 @@ body{
 // javascript toggle
 .sider-short{
     width: 99px !important;
+    background: @praimary !important;
 }
 .main-short{
     padding: 100px 35px 0 132px !important;
@@ -61,6 +62,9 @@ body{
 
     &-search{
         width: 26%;
+        @media only screen and (max-width: 993px){
+            margin-right: 50px;
+        }
 
         #search{
             .search(@white,40px,100%,10px);
@@ -76,6 +80,10 @@ body{
         &-phone{
             background:@green-light !important;
         }
+
+        @media only screen and (max-width: 993px){
+            display: none;
+        }
     }
     &-profile{
         .display-flex(flex,flex-end,center);
@@ -83,6 +91,12 @@ body{
 
         &-left{
             padding: 0 4px 0 12px;
+        }
+        &-right{
+            @media only screen and (max-width: 993px){
+                justify-content: flex-start;
+            }
+           
         }
         &-content{
             .display-flex(flex,center,center);
@@ -124,6 +138,7 @@ body{
     .transition();
     @media only screen and (max-width: 993px){
         width: 0;
+        background: rgba(0,0,0,0.0);
     }
 
     &-logo{
@@ -176,6 +191,7 @@ body{
     .transition();
     @media only screen and (max-width: 993px){
         display: grid;
+        padding: 100px 35px 0 33px;
     }
 
     &-inner{
@@ -292,6 +308,9 @@ body{
         }
         &-right{
             .display-flex(flex,flex-end,center);
+            @media only screen and (max-width: 993px){
+                justify-content: flex-start;
+            }
             #search{
                 .search(@white,40px,273px,30px)
             }
