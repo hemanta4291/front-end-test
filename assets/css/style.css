@@ -92,6 +92,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
+.sider-short {
+  width: 99px !important;
+}
+.main-short {
+  padding: 100px 35px 0 132px !important;
+}
 .navbar {
   background: #133159;
   display: flex;
@@ -172,6 +178,10 @@ body {
   top: 0;
   z-index: 66666;
   padding: 20px 35px;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
 }
 .sidebar-logo {
   color: #fff;
@@ -204,11 +214,16 @@ body {
   bottom: 35px;
   color: #fff;
   z-index: 9999999;
+  cursor: pointer;
 }
 .main {
   height: 100vh;
   width: 100%;
   padding: 100px 35px 0 280px;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
 }
 .main-inner {
   background: #fff;
