@@ -56,7 +56,8 @@ body{
         width: 26%;
 
         #search{
-            .search(@white,40px,100%,10px)
+            .search(@white,40px,100%,10px);
+            padding-left: 5px;
         }
         .label-icon{
             left: 89% !important;
@@ -159,10 +160,17 @@ body{
 
     &-inner{
         background: @white;
+        .borer-radius-px(10px);
     }
 
     &-topbar{
         border-bottom: 1px solid @gray-dark;
+        padding: 12px 0px;
+
+        &-title{
+            font-size:24px; 
+            line-height: 40px;
+        }
         &-left{
             .display-flex(flex,flex-end,center);
         }
@@ -230,8 +238,23 @@ body{
             }
         }
         &-date{
-            .select-wrapper{
+            position: relative;
+            z-index: 9999;
+            input{
                 width: 100px !important;
+            }
+
+            i.material-icons.date-icon {
+                position: absolute;
+                left: 4px;
+                top: 18%;
+                z-index: 0;
+            }
+            i.material-icons.arrow-down {
+                position: absolute;
+                right: 4px;
+                top: 18%;
+                z-index: 0;
             }
         }
 
