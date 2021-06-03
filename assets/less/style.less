@@ -43,13 +43,24 @@ body{
 
 // javascript toggle
 .sider-short{
-    width: 99px !important;
+    width: 114px !important;
     background: @praimary !important;
 }
 .main-short{
     padding: 100px 35px 0 132px !important;
 }
+.siderli{
+    width: 40px !important;
+    height: 40px !important;
+    .borer-radius-per(50%) !important;
+    padding: 0px 0 0px 6px !important;
+    text-align: center;
+    margin: 30px 0;
+}
 
+.dispaly-none{
+    display: none;
+}
 
 // Nesting
 .navbar{
@@ -154,8 +165,29 @@ body{
     &-list{
         overflow-y: auto;
         height: 75%;
+        background: @praimary;
+        li{
+            margin: 35px 0;
+            padding: 5px 10px;
+            cursor: pointer;
+            &:hover{
+                 background: @blue-light;
+                .borer-radius-px(10px);
+            }
+
+            @media only screen and (max-width: 993px){
+                height: 40px;
+                width: 40px;
+                .borer-radius-per(50%);
+            }
+        }
         &::-webkit-scrollbar-track{
             background: #f00 !important;
+        }
+
+        .active{
+            background: @blue-light;
+            .borer-radius-px(10px);
         }
     }
     &-list a{
@@ -275,7 +307,7 @@ body{
         }
         &-date{
             position: relative;
-            z-index: 9999;
+            cursor: pointer;
             input{
                 width: 100px !important;
             }
@@ -284,13 +316,13 @@ body{
                 position: absolute;
                 left: 4px;
                 top: 18%;
-                z-index: 0;
+                z-index: -0;
             }
             i.material-icons.arrow-down {
                 position: absolute;
                 right: 4px;
                 top: 18%;
-                z-index: 0;
+                z-index: -0;
             }
         }
 

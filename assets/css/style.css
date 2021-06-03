@@ -93,11 +93,24 @@ body {
   font-weight: 400;
 }
 .sider-short {
-  width: 99px !important;
+  width: 114px !important;
   background: #133159 !important;
 }
 .main-short {
   padding: 100px 35px 0 132px !important;
+}
+.siderli {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  padding: 0px 0 0px 6px !important;
+  text-align: center;
+  margin: 30px 0;
+}
+.dispaly-none {
+  display: none;
 }
 .navbar {
   background: #133159;
@@ -194,10 +207,10 @@ body {
   top: 0;
   z-index: 66666;
   padding: 20px 35px;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.5s;
-  -moz-transition: all linear 0.5s;
-  -ms-transition: all linear 0.5s;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
 }
 @media only screen and (max-width: 993px) {
   .sidebar {
@@ -219,9 +232,36 @@ body {
 .sidebar-list {
   overflow-y: auto;
   height: 75%;
+  background: #133159;
+}
+.sidebar-list li {
+  margin: 35px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.sidebar-list li:hover {
+  background: #3C7EF3;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+@media only screen and (max-width: 993px) {
+  .sidebar-list li {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
 }
 .sidebar-list::-webkit-scrollbar-track {
   background: #f00 !important;
+}
+.sidebar-list .active {
+  background: #3C7EF3;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 .sidebar-list a {
   color: #fff;
@@ -248,10 +288,10 @@ body {
   height: 100vh;
   width: 100%;
   padding: 100px 35px 0 280px;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.5s;
-  -moz-transition: all linear 0.5s;
-  -ms-transition: all linear 0.5s;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
 }
 @media only screen and (max-width: 993px) {
   .main {
@@ -343,7 +383,7 @@ body {
 }
 .main-select-serchbar-date {
   position: relative;
-  z-index: 9999;
+  cursor: pointer;
 }
 .main-select-serchbar-date input {
   width: 100px !important;
