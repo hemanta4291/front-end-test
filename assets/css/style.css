@@ -501,6 +501,15 @@ body {
   align-items: center;
   font-weight: 400;
 }
+.main-middle-single-left-list-dot {
+  width: 8px;
+  height: 8px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 0 20px;
+}
 .main-middle-single-right .material-icons {
   width: 40px;
   height: 40px;
@@ -600,6 +609,8 @@ body {
 }
 .main-add__content-single-list .list-count {
   color: #3C7EF3;
+  padding-left: 8px;
+  letter-spacing: 1px;
 }
 .main-add__content-single-list p {
   color: #8896A8;

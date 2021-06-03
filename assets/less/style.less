@@ -417,6 +417,14 @@ body{
                 &-list{
                     .display-flex(flex,flex-end,center);
                     font-weight: 400;
+
+                    &-dot{
+                        width: 8px;
+                        height: 8px;
+                        background: @dot;
+                        .borer-radius-px(50%);
+                        margin: 0 20px;
+                    }
                 }
             }
             &-right{
@@ -510,6 +518,8 @@ body{
                 }
                 .list-count{
                     color: @blue-light;
+                    padding-left: 8px;
+                    letter-spacing: 1px;
                 }
                 p{
                     color: @text-gray;
