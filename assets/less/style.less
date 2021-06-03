@@ -79,6 +79,9 @@ body{
         @media only screen and (max-width: 993px){
             margin-right: 50px;
         }
+        @media only screen and (max-width: 600px){
+            .dispaly-none;
+        }
 
         #search{
             .search(@white,40px,100%,10px);
@@ -268,10 +271,18 @@ body{
             @media only screen and (max-width: 992px){
                 .display-flex(flex,flex-start,center);
             }
+            @media only screen and (max-width: 600px){
+                .display-flex(block,flex-start,center);
+            }
         }
         &-ul{
             .display-flex(flex,center,center);
             padding-right: 18px;
+
+            @media only screen and (max-width: 600px){
+                justify-content: start;
+                padding: 8px 0;
+            }
             li{
                 a.active{
                     background: @praimary;
@@ -290,6 +301,8 @@ body{
                     }
                 }
             }
+
+            
         }
         &-buttons{
             a{
@@ -319,17 +332,26 @@ body{
     }
 
     &-select-serchbar{
+        
 
         &-sell{
             .select-wrapper{
                 width: 300px !important;
                 margin-right: 30px;
+                @media only screen and (max-width: 600px){
+                   width: 98% !important;
+
+             }
             }
         }
         &-active{
             .select-wrapper{
                 width: 128px !important;
                 margin-right: 30px;
+                @media only screen and (max-width: 600px){
+                    width: 98% !important;
+
+            }
             }
         }
         &-date{
@@ -337,6 +359,10 @@ body{
             cursor: pointer;
             input{
                 width: 100px !important;
+                @media only screen and (max-width: 600px){
+                    width: 98% !important;
+
+            }
             }
 
             i.material-icons.date-icon {
@@ -356,6 +382,10 @@ body{
         &-left{
             flex: .75 auto;
             display: flex;
+
+            @media only screen and (max-width: 600px){
+                display: block;
+            }
             .input-field{
                
             }
@@ -367,7 +397,7 @@ body{
         }
         &-right{
             .display-flex(flex,flex-end,center);
-            @media only screen and (max-width: 993px){
+            @media only screen and (max-width: 992px){
                 justify-content: flex-start;
             }
             #search{
