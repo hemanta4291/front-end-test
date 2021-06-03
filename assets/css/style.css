@@ -112,6 +112,9 @@ body {
 .dispaly-none {
   display: none;
 }
+.side-trans {
+  transform: translateX(0px) !important;
+}
 .navbar {
   background: #133159;
   display: flex;
@@ -212,10 +215,9 @@ body {
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
 }
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
   .sidebar {
-    width: 0;
-    background: rgba(0, 0, 0, 0);
+    transform: translateX(-258px);
   }
 }
 .sidebar-logo {
@@ -228,6 +230,13 @@ body {
 }
 .sidebar-logo-name {
   padding-left: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .sidebar-logo {
+    margin-top: 70px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+  }
 }
 .sidebar-list {
   overflow-y: auto;
@@ -245,13 +254,9 @@ body {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
   .sidebar-list li {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    margin: 15px 0;
   }
 }
 .sidebar-list::-webkit-scrollbar-track {
@@ -277,11 +282,25 @@ body {
   color: #fff;
   z-index: 9999999;
   cursor: pointer;
+  left: 47px;
 }
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
   .sidebar-toggle {
-    top: 27px;
-    left: 190px;
+    display: none;
+  }
+}
+.menu-toggle {
+  position: fixed;
+  color: #fff;
+  z-index: 9999999;
+  cursor: pointer;
+  left: 45px;
+  top: 28px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .menu-toggle {
+    display: block;
   }
 }
 .main {
@@ -293,7 +312,7 @@ body {
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
 }
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
   .main {
     display: grid;
     padding: 100px 35px 0 33px;
@@ -317,6 +336,13 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .main-topbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .main-topbar-ul {
   display: flex;
@@ -722,4 +748,9 @@ body {
 .main-delete__wrapper-single .material-icons {
   font-size: 18px;
   margin-right: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .main-delete__wrapper-single {
+    margin: 9px 0;
+  }
 }

@@ -16,4 +16,12 @@ $(document).ready(function(){
       $(".simplebar-content li").toggleClass("siderli");
       $(".sidebar-list span").toggleClass("dispaly-none");
     });
+
+    
+    $(".menu-toggle").on( "click", function() {
+      $(".sidebar").toggleClass("side-trans");
+      // $(".main").toggleClass("main-short");
+      // $(".simplebar-content li").toggleClass("siderli");
+      // $(".sidebar-list span").toggleClass("dispaly-none");
+    });
   });

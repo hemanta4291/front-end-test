@@ -62,6 +62,9 @@ body{
     display: none;
 }
 
+.side-trans{
+    transform: translateX(0px) !important;
+}
 // Nesting
 .navbar{
     background: @praimary;
@@ -147,9 +150,11 @@ body{
     z-index: 66666;
     padding: 20px 35px;
     .transition();
-    @media only screen and (max-width: 993px){
-        width: 0;
-        background: rgba(0,0,0,0.0);
+    @media only screen and (max-width: 992px){
+        // width: 0;
+        // background: rgba(0,0,0,0.0);
+         transform: translateX(-258px);
+
     }
 
     &-logo{
@@ -160,6 +165,11 @@ body{
 
         &-name{
             padding-left: 10px;
+        }
+        @media only screen and (max-width: 992px){
+            margin-top: 70px;
+            padding-bottom: 0px;
+            padding-left: 7px;
         }
     }
     &-list{
@@ -175,10 +185,11 @@ body{
                 .borer-radius-px(10px);
             }
 
-            @media only screen and (max-width: 993px){
-                height: 40px;
-                width: 40px;
-                .borer-radius-per(50%);
+            @media only screen and (max-width: 992px){
+                // height: 40px;
+                // width: 40px;
+                // .borer-radius-per(50%);
+                margin: 15px 0;
             }
         }
         &::-webkit-scrollbar-track{
@@ -200,20 +211,33 @@ body{
         }
     }
 
-    &-toggle{
-        position: fixed;
-        bottom: 35px;
-        color: #fff;
-        z-index: 9999999;
-        cursor: pointer;
+    
+}
+.sidebar-toggle{
+    position: fixed;
+    bottom: 35px;
+    color: #fff;
+    z-index: 9999999;
+    cursor: pointer;
+    left: 47px;
 
-        @media only screen and (max-width: 993px){
-            top: 27px;
-            left: 190px;
-        }
+    @media only screen and (max-width: 992px){
+        .dispaly-none;
     }
 }
+.menu-toggle{
+    position: fixed;
+    color: #fff;
+    z-index: 9999999;
+    cursor: pointer;
+    left: 45px;
+    top: 28px;
+    .dispaly-none;
 
+    @media only screen and (max-width: 992px){
+        display: block;
+    }
+}
 
 // main less
 .main{
@@ -221,7 +245,7 @@ body{
     width: 100%;
     padding: 100px 35px 0 280px;
     .transition();
-    @media only screen and (max-width: 993px){
+    @media only screen and (max-width: 992px){
         display: grid;
         padding: 100px 35px 0 33px;
     }
@@ -241,6 +265,9 @@ body{
         }
         &-left{
             .display-flex(flex,flex-end,center);
+            @media only screen and (max-width: 992px){
+                .display-flex(flex,flex-start,center);
+            }
         }
         &-ul{
             .display-flex(flex,center,center);
@@ -368,6 +395,8 @@ body{
         &-row{
             overflow-x: scroll;
             overflow-y: hidden;
+
+            
             
         }
         &-toper{
@@ -592,6 +621,10 @@ body{
             .material-icons{
                 font-size: 18px;
                 margin-right: 12px;
+            }
+
+            @media only screen and (max-width: 600px){
+                margin: 9px 0;
             }
         }
     }
